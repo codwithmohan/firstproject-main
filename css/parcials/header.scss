@@ -1,0 +1,41 @@
+header{
+    width: 100%;
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, 0.2);
+    .logo{
+        h2{
+            background-color: $secondary-color;
+            display: inline-block;
+            text-align: center;
+            margin-right: 16px;
+        }
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: end;
+        ul{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin: 0;
+            column-gap: 30px;
+            li{
+                a{
+                    font-size: $regular-size;
+                    font-weight: $font-weight-semibold;
+                    line-height: $x-large-height;
+                    color: $primary-heading-color;
+                    transition: all ease-in-out 0.4s;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+                a.active{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+#about-us-section{
+    .about-left-content{
+        .about-img{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 80%;
+                top: 10%;
+                left: 20%;
+                border: 1rem solid $primary-color;
+                z-index: -1;
+
+                @media screen and (max-width:1365px) {
+                    top: 12%;
+                    left: 25%;
+                    width: 50%;
+                }
+                @media screen and (max-width:1199px) {
+                    height: 60%;
+                    top: 22%;
+                }
+            }
+        }
+    }
+    .about-right-content{
+        h2{
+            max-width: 612px;
+
+            @media screen and (max-width:1199px) {
+                font-size: 38px;
+            }
+        }
+        .btn {
+            @media screen and (max-width:1365px) {
+                padding-left: 45px !important;
+                padding-right: 45px !important;
+            }
+            @media screen and (max-width:1199px) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+    }
+}

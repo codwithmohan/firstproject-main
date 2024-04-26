@@ -1,0 +1,100 @@
+#testimonial-section{
+    width: 100%;
+    .testi-heading{
+        flex-direction: column;
+        align-items: center;
+        h2{
+            max-width: 500px;
+        }
+    }
+    .testimonial-slider{
+        width: auto;
+        padding: 0;
+        .testimonial-item{
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                background-color: $secondary-color;
+                color: $white-color;
+                h4{
+                    color: $white-color;
+                    transition: all ease-in-out 0.3s;
+                }
+                p{
+                    color: $white-color;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
+            .item-client{
+                .item-img{
+                    max-width: 70px;
+                    max-height: 70px;
+                    overflow: hidden;
+                    img{
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .slick-slide{
+            padding: 0 15px;
+        }
+        button.slick-prev.slick-arrow {
+            font-size: 0;
+            &::after{
+                content: "\f104";
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 22px;
+                background-color: $secondary-color;
+                transition: all ease-in-out 0.4s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white-color;
+                cursor: pointer;
+                bottom: -40px;
+                font-family: 'fontawesome';
+                left: calc(50% - 40px);
+                transform: translateX(-50% );
+
+                @media screen and (max-width:1365px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+        button.slick-next.slick-arrow {
+            font-size: 0;
+            &::before{
+                content: "\f105";
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 22px;
+                background-color: $secondary-color;
+                transition: all ease-in-out 0.4s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white-color;
+                cursor: pointer;
+                bottom: -40px;
+                font-family: 'fontawesome';
+                left: calc(50% + 20px);
+                transform: translateX(-50% );
+
+                @media screen and (max-width:1365px) {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}

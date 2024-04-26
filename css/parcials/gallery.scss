@@ -1,0 +1,25 @@
+#gallery-section{
+    width: 100%;
+    .gallery-heading{
+        flex-direction: column;
+        align-items: center;
+        h2{
+            max-width: 500px;
+        }
+    }
+    .gl-img{
+        overflow: hidden;
+        padding: 0;
+        img{
+            object-fit: cover;
+            object-position: center;
+            transition: all ease-in-out 0.4s;
+            width: 100%;
+        }
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

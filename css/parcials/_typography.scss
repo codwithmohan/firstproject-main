@@ -1,0 +1,48 @@
+h1 {
+    @include properties($primary-heading-color, $x-large-size, $large-height, $font-weight-bold, $primary-font);
+}
+
+h2 {
+    @include properties($primary-heading-color, $medium-size, $large-height, $font-weight-bold, $primary-font);
+}
+
+h3 {
+    @include properties($primary-heading-color, $xx-regular-size, $large-height, $font-weight-semibold, $primary-font);
+}
+
+h4 {
+    @include properties($primary-heading-color, $x-regular-size, $large-height, $font-weight-semibold, $primary-font);
+}
+
+h5 {
+    @include properties($secondary-heading-color, $regular-size , $x-large-height, $font-weight-regular, $secondary-font);
+}
+
+p {
+    @include properties($para-color, $small-size, $x-large-height, $font-weight-regular, $secondary-font);
+}
+
+h2.logo-text {
+    @include properties($white-color, $medium-size, $large-height, $font-weight-semibold, $primary-font);
+}
+
+.btn {
+    line-height: $x-large-height;
+    text-align: center;
+    background-color: $secondary-color;
+    color: $white-color;
+    font-size: $small-size;
+    font-weight: $font-weight-medium;
+
+    @media screen and (max-width:1365px) {
+        line-height: 1.2;
+    }
+}
+
+.bg-white {
+    background-color: $white-color;
+}
+
+.bg-light {
+    background-color: $primary-color !important;
+}

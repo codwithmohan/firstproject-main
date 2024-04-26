@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-3">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/header-logo.png" class="py-4" alt="logo here">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-9 col-md-9">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner section -->
+    <section id="banner-section" class="py-5 mb-5">
+        <div class="container">
+            <div class="banner-wrapper py-5">
+                <div class="row align-items-center">
+                    <div class="banner-left-content col-lg-6">
+                        <h5 class="mb-2">WELCOME TO PHOTOZONE</h5>
+                        <h1 class="mb-3">Wedding And Portrait Studio Based in New York</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        </p>
+                        <div class="btn-and-video">
+                            <a href="#" target="_blank" class="btn py-3 px-4 me-5">Explore More</a>
+                            <button type="button" class="btn-play" data-bs-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                            <h4 class="ms-4 mb-0 d-none d-sm-block">Play Video</h4>
+                        </div>
+                    </div>
+                    <div class="banner-right-content col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid bg-white p-3 w-100 mb-3" src="images/hero-img-1.jpg"
+                                    alt="hero-img-1">
+                                <img class="img-fluid bg-white p-3 w-50" src="images/hero-img-3.jpg" alt="hero-img-3">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid bg-white p-3 w-50 mb-3" src="images/hero-img-4.jpg"
+                                    alt="hero-img-4">
+                                <img class="img-fluid bg-white p-3 w-100" src="images/hero-img-2.jpg" alt="hero-img-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us section-->
+    <section id="about-us-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mt-5 about-left-content">
+                    <div class="row about-img g-3 position-relative h-100">
+                        <div class="col-6 mt-3">
+                            <img class="img-fluid bg-light p-3" src="images/about-img1.jpg" alt="about-img1">
+                        </div>
+                        <div class="col-6 align-self-end mt-3">
+                            <img class="img-fluid bg-light p-3" src="images/about-img2.jpg" alt="about-img2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 about-right-content">
+                    <div class="h-100">
+                        <h5 class="mb-2">ABOUT US</h5>
+                        <h2 class="mb-4">We Are Creative And Professional Photographer</h2>
+                        <p class="mb-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                            diam et eos.
+                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        </p>
+                        <p class="mb-3">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
+                            diam et eos.
+                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+                        </p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6 d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-3"></i>Quality Products
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-3"></i>Custom Products
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-3"></i>Online Order
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center">
+                                <i class="fa fa-check text-primary me-3"></i>Home Delivery
+                            </div>
+                        </div>
+                        <a class="btn py-3 px-5" href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- facts section start -->
+    <section id="facts-section" class="py-5">
+        <div class="container">
+            <div class="fact-heading text-center">
+                <h5 class="mb-2">WHY CHOOSE US!</h5>
+                <h2 class="mb-5 text-center">The Leading Photo Studio In The Country</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pt-lg-5 mt-3">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h2 class="mb-3"><span class="counter">35</span></h2>
+                        <h3 class="mb-3">Award Winning</h3>
+                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+                            justo</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h2 class="mb-3"><span class="counter">45</span></h2>
+                        <h3 class="mb-3">Years Experience</h3>
+                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+                            justo</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-lg-5 mt-3">
+                    <div class="fact-item bg-light text-center h-100 p-5">
+                        <h2 class="mb-3"><span class="counter">12345</span></h2>
+                        <h3 class="mb-3">Happy Clients</h3>
+                        <p>Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+                            justo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- service section start -->
+    <section id="service-section">
+        <div class="container bg-light py-5 my-5">
+            <div class="fact-heading text-center d-flex pt-5">
+                <h5 class="mb-2">WHY CHOOSE US!</h5>
+                <h2 class="mb-5 text-center">The Leading Photo Studio In The Country</h2>
+            </div>
+            <div class="row px-2 pb-5">
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/service-img1.jpg" alt="service-img1">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
+                                        class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3>Weddings</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 pt-lg-5">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/service-img2.jpg" alt="service-img2">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
+                                        class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3>Portraits</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/service-img3.jpg" alt="service-img3">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
+                                        class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3>Fashion</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 pt-lg-5">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/service-img4.jpg" alt="service-img4">
+                            <div class="service-overlay">
+                                <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i
+                                        class="fa fa-link text-primary"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3>Editorial</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial section -->
+
+    <section id="testimonial-section" class="py-5">
+        <div class="container pb-5">
+            <div class="testi-heading text-center d-flex">
+                <h5 class="mb-2">testimonial!</h5>
+                <h2 class="mb-5 text-center">More Than 20000+ Customers Trusted Us</h2>
+            </div>
+            <div class="row">
+                <div class="testimonial-slider position-relative">
+                    <div class="item-main my-1">
+                        <div class="testimonial-item p-4">
+                            <div class="item-client d-flex align-items-center mb-4">
+                                <div class="item-img">
+                                    <img class="flex-shrink-0 rounded-circle border p-1"
+                                        src="images/testimonial-img1.jpg" alt="testimonial-img1">
+                                </div>
+                                <div class="client-bio ms-4">
+                                    <h4 class="mb-1">Client Name</h4>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+                    <div class="item-main my-1">
+                        <div class="testimonial-item p-4">
+                            <div class="item-client d-flex align-items-center mb-4">
+                                <div class="item-img">
+                                    <img class="flex-shrink-0 rounded-circle border p-1"
+                                        src="images/testimonial-img2.jpg" alt="testimonial-img2">
+                                </div>
+                                <div class="client-bio ms-4">
+                                    <h4 class="mb-1">Client Name</h4>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+                    <div class="item-main my-1">
+                        <div class="testimonial-item p-4">
+                            <div class="item-client d-flex align-items-center mb-4">
+                                <div class="item-img">
+                                    <img class="flex-shrink-0 rounded-circle border p-1"
+                                        src="images/testimonial-img3.jpg" alt="testimonial-img3">
+                                </div>
+                                <div class="client-bio ms-4">
+                                    <h4 class="mb-1">Client Name</h4>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+                    <div class="item-main my-1">
+                        <div class="testimonial-item p-4">
+                            <div class="item-client d-flex align-items-center mb-4">
+                                <div class="item-img">
+                                    <img class="flex-shrink-0 rounded-circle border p-1"
+                                        src="images/testimonial-img1.jpg" alt="testimonial-img1">
+                                </div>
+                                <div class="client-bio ms-4">
+                                    <h4 class="mb-1">Client Name</h4>
+                                    <span>Profession</span>
+                                </div>
+                            </div>
+                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam
+                                et
+                                eos. Clita erat ipsum et lorem et sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery section  -->
+    <section id="gallery-section" class="py-5">
+        <div class="container pb-4">
+            <div class="gallery-heading text-center d-flex">
+                <h5 class="mb-2">OUR GALLERY !</h5>
+                <h2 class="mb-5 text-center">Discover Our Unique And Creative Photoshoot</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img1.jpg" alt="gallery-img1">
+                        </div>
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img2.jpg" alt="gallery-img2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img3.jpg" alt="gallery-img3">
+                        </div>
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img4.jpg" alt="gallery-img4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img5.jpg" alt="gallery-img5">
+                        </div>
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img6.jpg" alt="gallery-img6">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img7.jpg" alt="gallery-img7">
+                        </div>
+                        <div class="col-12 gl-img">
+                            <img class="img-fluid" src="images/gallery-img8.jpg" alt="gallery-img8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- latest img section -->
+    <section id="latest-section" class="py-5 mb-5">
+        <div class="container">
+            <div class="latest-heading text-center d-flex flex-column align-items-center">
+                <h5 class="mb-2">LATEST VIEWED !</h5>
+                <h2 class="mb-5 text-center">We Are Professional In Our Works. Hire Us!!</h2>
+            </div>
+        </div>
+        <div class="slide-main">
+            <div class="latest-slide-item">
+                <div class="item-img">
+                    <img src="images/slide-img4.jpg" alt="slide-img4">
+                </div>
+            </div>
+            <div class="latest-slide-item">
+                <div class="item-img">
+                    <img src="images/slide-img2.jpg" alt="slide-img2">
+                </div>
+            </div>
+            <div class="latest-slide-item">
+                <div class="item-img">
+                    <img src="images/slide-img3.jpg" alt="slide-img3">
+                </div>
+            </div>
+            <div class="latest-slide-item">
+                <div class="item-img">
+                    <img src="images/slide-img4.jpg" alt="slide-img4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-first-col">
+                        <div class="footer-logo">
+                            <a href="#"><img src="images/header-logo.png" alt="logo"></a>
+                        </div>
+                        <p class="mt-3 discription">Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem
+                            nonumy. Tempor sea
+                            ipsum diam sed
+                            clita dolore eos dolores magna erat dolore sed stet justo et dolor.
+
+                        </p>
+                        <p class="footer-icon mb-2"><a href="#"><i class="fa fa-map-marker"
+                                    aria-hidden="true"></i></a>123 Street, New York, USA</p>
+                        <p class="footer-icon mb-2"><a href="tel:+012 345 67890"><i class="fa fa-phone"
+                                    aria-hidden="true"></i>
+                                +012 345 67890</a></p>
+                        <P class="footer-icon mb-4"><a href="mailto:info@example.com"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i> info@example.com
+                            </a></P>
+                        <ul class="social-icon d-flex">
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quick-links">
+                        <div class="heading mb-3">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <ul class="d-flex">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quick-links">
+                        <div class="heading mb-3">
+                            <h3>Popular Links</h3>
+                        </div>
+                        <ul class="d-flex">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.counter').each(function () {
+            var size = $(this).text().split(".")[1] ? $(this).text().split(".")[1].length : 0;
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 5000,
+                step: function (func) {
+                    $(this).text(parseFloat(func).toFixed(size));
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                infinite: true,
+            });
+            $('.slide-main').slick({
+                dots: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                infinite: true,
+            })
+        })
+    </script>
+
+</body>
+
+</html>

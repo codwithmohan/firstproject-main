@@ -1,0 +1,41 @@
+#latest-section {
+    width: 100%;
+
+    .latest-heading {
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            max-width: 500px;
+        }
+    }
+
+    .slide-main {
+        margin-left: -40px;
+
+        @media screen and (max-width:1365px) {
+            margin-left: 0;
+        }
+
+        .latest-slide-item {
+            .item-img {
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+
+        .slick-slide {
+            padding: 0 0 0 40px;
+
+            @media screen and (max-width:1365px) {
+                padding: 0 15px;
+            }
+        }
+    }
+}

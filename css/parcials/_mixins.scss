@@ -1,0 +1,12 @@
+@mixin properties($color,$font-size,$line-height,$font-weight,$font-family){
+    color: $color;
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight:$font-weight;
+    font-family: $font-family;
+}
+@mixin img-properties($width,$object-fit,$object-position){
+    width: $width;
+    object-fit: $object-fit;
+    object-position:$object-position ;
+}

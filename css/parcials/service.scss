@@ -1,0 +1,55 @@
+#service-section {
+    width: 100%;
+
+    .fact-heading {
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            max-width: 500px;
+        }
+    }
+
+    .service-item {
+        transition: all ease-in-out 0.3s;
+        &:hover{
+            margin-top: -10px;
+            background-color: $secondary-color !important;
+            color: $primary-color;
+            .service-overlay{
+                opacity: 1;
+            }
+        }
+        .service-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, .5);
+            overflow: hidden;
+            opacity: 0;
+            transition: .5s;
+            .btn-lg-square {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                background-color: transparent !important;
+                border: 1px solid $white-color;
+                &:hover{
+                    background-color: $white-color !important;
+                }
+                .text-primary{
+                    color: $secondary-color !important;
+                    font-size: $small-size;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

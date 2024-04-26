@@ -1,0 +1,96 @@
+#banner-section {
+    width: 100%;
+    background-color: $primary-color;
+
+    .banner-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media screen and (max-width:1365px) {
+            padding: 40px 0;
+        }
+
+        .banner-left-content {
+            h1 {
+                @media screen and (max-width:1365px) {
+                    font-size: 54px;
+                }
+
+                @media screen and (max-width:1199px) {
+                    font-size: 48px;
+                }
+            }
+
+            p {
+                max-width: 624px;
+            }
+
+            .btn-and-video {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .btn-play {
+                    position: relative;
+                    display: block;
+                    box-sizing: content-box;
+                    width: 16px;
+                    height: 26px;
+                    border-radius: 100%;
+                    border: none;
+                    outline: none !important;
+                    padding: 18px 20px 20px 28px;
+                    background-color: $secondary-color;
+
+                    span {
+                        display: block;
+                        position: relative;
+                        z-index: 3;
+                        width: 0;
+                        height: 0;
+                        left: -1px;
+                        border-left: 16px solid #FFFFFF;
+                        border-top: 11px solid transparent;
+                        border-bottom: 11px solid transparent;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: 0;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                        background: $secondary-color;
+                        border-radius: 100%;
+                        animation: pulse-border 1500ms ease-out infinite;
+
+                        @media screen and (max-width:1199px) {
+                            width: 55px;
+                            height: 55px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner-right-content {}
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        opacity: 0;
+    }
+}

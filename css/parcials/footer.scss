@@ -1,0 +1,92 @@
+footer{
+    background-color: $primary-heading-color;
+    opacity: 0.9;
+    .footer-first-col{
+        width: 100%;
+        .footer-logo{
+            img{
+                filter: brightness(80);
+            }
+        }
+        .discription{
+            color: $footer-light-color;
+        }
+        .footer-icon{
+            display: flex;
+            align-items: center;
+            color: $footer-light-color;
+            a{
+                color: $footer-light-color;
+                i{
+                    font-size: $small-size;
+                    color: $footer-light-color;
+                    margin-right: 6px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .social-icon{
+            column-gap: 15px;
+            padding: 0;
+            margin: 0;
+            li{
+                a{
+                    width: 38px;
+                    height: 38px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $secondary-color;
+                    border-radius: 50%;
+                    transition: all ease-in-out 0.4s;
+                    &:hover{
+                        background-color: $secondary-color;
+                        i{
+                            color: $white-color;
+                        }
+                    }
+                    i{
+                        font-size: $regular-size;
+                        color: $secondary-color;
+                        transition: all ease-in-out 0.4s;
+                    }
+                }
+            }
+        }
+    }
+    .quick-links{
+        .heading{
+            h3{
+                color: $white-color;
+            }
+        }
+        ul{
+            flex-direction: column;
+            row-gap: 15px;
+            justify-content: center;
+            li{
+                position: relative;
+                padding-left: 15px;
+                &::before{
+                    content: '\f105';
+                    position: absolute;
+                    font-size: $small-size;
+                    font-family: 'fontawesome';
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    color: $footer-light-color;
+                }
+                a{
+                    color: $footer-light-color;
+                    font-size: $small-size;
+                    transition: all ease-in-out 0.4s;
+                    &:hover{
+                        letter-spacing: 1px;
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
